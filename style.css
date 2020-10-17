@@ -24,6 +24,12 @@ svg{
     transform-origin: bottom;
 }
 
+#hat{
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: top;
+    transform-box: fill-box;
+}
+
 @keyframes wheel{
     from{
         transform: rotateZ(0deg);
@@ -39,5 +45,14 @@ svg{
     }
     to{
         transform: rotateX(17deg);
+    }
+}
+
+@keyframes hat{
+    from{
+        transform: translateY(0%) rotateZ(0deg);
+    }
+    to{
+        transform: translateY(30%) rotateZ(16deg);
     }
 }
