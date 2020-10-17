@@ -19,6 +19,11 @@ svg{
     transform-box: fill-box;
 }
 
+#man{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
 @keyframes wheel{
     from{
         transform: rotateZ(0deg);
@@ -28,3 +33,11 @@ svg{
     }
 }
 
+@keyframes bike{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(17deg);
+    }
+}
